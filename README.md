@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Interactive Journal 🧠
 
-## Getting Started
+A personal journaling app powered by Socratic-style AI reflection.  
+The user writes freely about their day, and the AI responds with open-ended, thought-provoking questions — not advice, not coaching.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Project Goals
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Provide a private space for daily journaling.
+- Encourage self-reflection through gentle Socratic questioning.
+- Practice clean UI, React/Next.js architecture, and AI integration.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Tech Stack
 
-## Learn More
+- **Framework:** Next.js 14 (App Router + TypeScript)
+- **AI Model:** DeepSeek R1 via API
+- **Deployment:** Vercel (planned)
+- **Optional Features (Future):**
+  - Authentication (NextAuth / Supabase / Clerk)
+  - Persistent storage (PostgreSQL / SQLite / Supabase)
+  - Entry history with date filtering
+  - Multi-language support
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✅ MVP Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] Text area for writing daily entry
+- [ ] Submit entry and receive AI response (via DeepSeek)
+- [ ] Display date + response below the entry
+- [ ] Simple and clean UI
+- [ ] Basic loading state
+- [ ] Environment variable for API key
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚧 Future Roadmap
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Add user authentication
+- [ ] Save entries in a database
+- [ ] View past entries and responses
+- [ ] Mobile-friendly layout
+- [ ] Mood/emotion tagging
+
+---
+
+## 📦 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone git@github.com:marcelavbc/ai-interactive-journal.git
+   cd ai-interactive-journal
