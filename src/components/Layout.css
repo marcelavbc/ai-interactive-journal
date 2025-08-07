@@ -1,0 +1,30 @@
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdf6e3; /* Beige suave */
+  font-family: 'Georgia', serif;
+}
+
+.layout-header {
+  background-color: #f5deb3;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #e3cba5;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.layout-footer {
+  background-color: #f5deb3;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}

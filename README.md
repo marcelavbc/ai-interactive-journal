@@ -53,15 +53,23 @@ The user writes freely about their day, and the AI responds with open-ended, tho
    ```bash
    git clone git@github.com:marcelavbc/ai-interactive-journal.git
    cd ai-interactive-journal
-   
+
+   ```
 2. Install dependencies:
+
    ```bash
     npm install
 
+   ```
+
 3. Create .env.local and add your API key:
+
    ```bash
     DEEPSEEK_API_KEY=your-key-here
 
+   ```
+
 4. Start the development server:
-    ```bash
-    npm run dev
+   ```bash
+   npm run dev
+   ```
