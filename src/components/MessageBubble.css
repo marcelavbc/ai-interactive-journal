@@ -1,27 +1,26 @@
+/* components/MessageBubble.css */
 .message-bubble {
-  max-width: 75%;
-  padding: 12px 16px;
-  border-radius: 12px;
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  max-width: 70%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 1rem;
+  line-height: 1.6;
   white-space: pre-wrap;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
-  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e9e3d7;
+  font-family: inherit;
 }
 
 .message-bubble.user {
-  background-color: #e2f0fc;
+  background: var(--bubble-user);
   align-self: flex-end;
   text-align: right;
-  border-top-right-radius: 0;
-  margin-left: auto;
+  border-top-right-radius: 6px;
 }
 
 .message-bubble.ai {
-  background-color: #fef3d3;
+  background: var(--bubble-ai);
   align-self: flex-start;
   text-align: left;
-  border-top-left-radius: 0;
-  margin-right: auto;
+  border-top-left-radius: 6px;
 }

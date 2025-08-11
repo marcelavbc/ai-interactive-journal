@@ -61,14 +61,21 @@ const JournalChat: React.FC = () => {
   return (
     <div className="journal-chat-container">
       <div className="journal-chat">
-        <div className="journal-messages">
-          {messages.map(msg => (
-            <MessageBubble key={msg.id} message={msg} />
-          ))}
-          {loading && <div className="loading-message">Escribiendo...</div>}
-          <div ref={messagesEndRef} />
-        </div>
-
+        {(messages.length > 0 || loading) && (
+          <div className="journal-messages">
+            {messages.map(m =>
+              m.sender === 'ai' ? (
+                <MessageBubble key={m.id} message={m} />
+              ) : (
+                <p key={m.id} className="entry-line">
+                  {m.text}
+                </p>
+              )
+            )}
+            {loading && <div className="loading-message">Escribiendo...</div>}
+            <div ref={messagesEndRef} />
+          </div>
+        )}
         <div className="journal-form">
           <textarea
             ref={textareaRef}

@@ -1,13 +1,16 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg: #f4efe6; /* fondo general cálido */
+  --paper: #fffcf7; /* papel crema */
+  --ink: #222222; /* “tinta” */
+  --line: rgba(80, 124, 168, 0.08); /* líneas de la hoja */
+  --margin: rgba(214, 64, 64, 0.18); /* margen roja de libreta */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --bubble-user: #e9f1fa; /* azul MUY suave */
+  --bubble-ai: #fff1dd; /* crema suave */
+  --border: #e8e2d6;
+  --accent: #c89a5b; /* botón */
+  --accent-dark: #b4823e;
+  --line-gap: 30px;
 }
 
 html,
@@ -15,28 +18,15 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: var(--bg);
+  color: var(--ink);
   font-family: 'Georgia', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  padding: 0;
 }
