@@ -1,10 +1,10 @@
 import Layout from '@/components/Layout';
-import JournalChat from '@/components/JournalChat';
+import NotebookEntry from '../components/NotebookEntry/NotebookEntry';
 
 export default function Home() {
   return (
     <Layout>
-      <JournalChat />
+      <NotebookEntry />
     </Layout>
   );
 }
